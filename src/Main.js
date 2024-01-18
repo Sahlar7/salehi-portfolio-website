@@ -3,7 +3,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Image from 'react-bootstrap/Image'
 import {useEffect, useRef, useState} from "react";
-import {Button, ButtonGroup, Card, CardGroup, Col, Dropdown, Form, InputGroup, Row} from "react-bootstrap";
+import {Button, ButtonGroup, Card, CardGroup, Col, Dropdown, Form, Row} from "react-bootstrap";
 import {Link} from "react-router-dom";
 import emailjs from "@emailjs/browser";
 
@@ -155,27 +155,26 @@ function Main() {
             <FadeIn>
                 <div id="Contact" className="contact">
                     <h1>Contact</h1>
-                    <form ref={contactForm} onSubmit={sendEmail}>
-                        <Row>
+                    <Container>
+                    <Form ref={contactForm} onSubmit={sendEmail}>
+                        <Row className="mb-3">
                             <Col>
                         <label>Name</label>
-                                <br/>
-                        <input type="text" name="user_name" required/>
+                        <Form.Control type="text" name="user_name" required size="sm"/>
                             </Col>
                             <Col>
                         <label>Email</label>
-                                <br/>
-                        <input type="email" name="user_email" required/>
-                            </Col>
-                            <Col>
-                        <label>Message</label>
-                                <br/>
-                        <textarea name="message" required/>
+                        <Form.Control type="email" name="user_email" required size="sm"/>
                             </Col>
                         </Row>
+                        <Row>
+                        <label>Message</label>
+                        <Form.Control as="textarea" name="message" required/>
+                        </Row>
                         <br/>
-                        <input type="submit" value={submitText} id="submitButton" disabled={isSubmitted}/>
-                    </form>
+                        <Button type="submit" id="submitButton" disabled={isSubmitted} variant="dark">{submitText}</Button>
+                    </Form>
+                    </Container>
                     <br/>
                     <br/>
                     <hr/>
