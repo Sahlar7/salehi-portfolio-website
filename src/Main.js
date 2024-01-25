@@ -178,12 +178,12 @@ function Main() {
                     <br/>
                     <br/>
                     <hr/>
-                    <Row>
+                    <Row className="justify-content-md-center">
                         <Col>
-                        <span>Email: sahlar.salehi@gmail.com</span>
+                        <span><Image src={require("./images/website-emailicon.png")} style={{width: 50, height: 40}}/> sahlar.salehi@gmail.com</span>
                         </Col>
                         <Col>
-                            <a href="https://www.linkedin.com/in/sahlar-salehi-0999a025b">LinkedIn</a>
+                            <a href="https://www.linkedin.com/in/sahlar-salehi"><Image src={require("./images/website-linkedinicon.png")} style={{width: 50, height: 50}}/></a>
                         </Col>
                     </Row>
                 </div>
