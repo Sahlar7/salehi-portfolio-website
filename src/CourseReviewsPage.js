@@ -4,7 +4,6 @@ import {Link} from "react-router-dom";
 import Nav from "react-bootstrap/Nav";
 import {HashLink} from "react-router-hash-link";
 import {Button, ButtonGroup, Col, Dropdown, Row} from "react-bootstrap";
-import Image from "react-bootstrap/Image";
 
 
 function CourseReviewsPage(){
