@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/css/main.57921be6.css",
+    "main.js": "/static/js/main.2e74152e.js",
+    "static/js/787.aada7704.chunk.js": "/static/js/787.aada7704.chunk.js",
+    "static/media/HoosAvailableDemo.mp4": "/static/media/HoosAvailableDemo.6087a54ed4d4a4fb2a83.mp4",
+    "static/media/CourseReviewDemo.mp4": "/static/media/CourseReviewDemo.9ca0f405dc5d59434391.mp4",
+    "static/media/website-proj3.png": "/static/media/website-proj3.7ad30cdec3816b30be1d.png",
+    "static/media/about-picture.JPG": "/static/media/about-picture.1d12925c4de36f72582a.JPG",
+    "static/media/piano-banner.jpg": "/static/media/piano-banner.4274cf5d7b93bbb78bb5.jpg",
+    "static/media/website-proj1.png": "/static/media/website-proj1.2389eaa136c2fc5eb306.png",
+    "static/media/website-proj2.png": "/static/media/website-proj2.b1903631a996c1449875.png",
+    "static/media/website-proj3cover.png": "/static/media/website-proj3cover.f736f0b106b3893fa727.png",
+    "index.html": "/index.html",
+    "main.57921be6.css.map": "/static/css/main.57921be6.css.map",
+    "main.2e74152e.js.map": "/static/js/main.2e74152e.js.map",
+    "787.aada7704.chunk.js.map": "/static/js/787.aada7704.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.57921be6.css",
+    "static/js/main.2e74152e.js"
+  ]
+}
