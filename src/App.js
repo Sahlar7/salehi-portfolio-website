@@ -4,6 +4,7 @@ import Main from "./Main";
 import HoosAvailablePage from "./HoosAvailablePage";
 import CourseReviewsPage from "./CourseReviewsPage";
 import ResearchPage from "./ResearchPage";
+import ORCLPage from "./ORCLPage";
 
 function App() {
     return(
@@ -13,6 +14,7 @@ function App() {
             <Route path="/HoosAvailablePage" element={<HoosAvailablePage/>}/>
             <Route path="/CourseReviewsPage" element={<CourseReviewsPage/>}/>
             <Route path="/ResearchPage" element={<ResearchPage/>}/>
+            <Route path="/ORCLPage" element={<ORCLPage/>}/>
             <Route path="/Main" element={<Main/>}/>
         </Routes>
     </Router>

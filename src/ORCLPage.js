@@ -1,12 +1,13 @@
-import Container from "react-bootstrap/Container";
 import Navbar from "react-bootstrap/Navbar";
+import Container from "react-bootstrap/Container";
 import {Link} from "react-router-dom";
 import Nav from "react-bootstrap/Nav";
 import {HashLink} from "react-router-hash-link";
 import {Button, ButtonGroup, Col, Dropdown, Row} from "react-bootstrap";
+import Image from "react-bootstrap/Image";
 
 
-function CourseReviewsPage(){
+function ORCLPage() {
     return(
         <>
             <Navbar sticky="top" bg="dark" data-bs-theme="dark">
@@ -29,48 +30,44 @@ function CourseReviewsPage(){
                     </Nav>
                 </Container>
             </Navbar>
-            <body className="main">
-            <h1 style={{marginTop: 20}}>Course Reviews Application</h1>
+            <body className = "main">
+            <h1 style={{marginTop: 20}}>Omni Reality & Cognition Lab</h1>
             <div>
                 <Container>
                     <Row>
+                        <Col xs={8}>
+                            <p>
+                                The Omni Reality and Cognition Lab (ORCL) aims to use augmented and virtual reality to
+                                observe human behavior and reaction to virtual environments
+                            </p>
+                            <p>
+                                Many of ORCL's projects center around using mixed realities for experiment design in traffic/micromobility.
+                                For example, one project, Virtual Reality As A Tool For Understanding Vulnerable Road User Preference And Reaction,
+                                focused on the use a VR bike and pedestrian simulator to model road user behaviors.
+
+                            </p>
+                        </Col>
                         <Col>
-                            <p>
-                                This course reviews application project was completed by Sahlar and two others as the final project
-                                for the UVA course CS 3140 - Software Development Essentials. The application was created using Java,
-                                 Javafx, and SQLite/Hibernate ORM for database features.
-                            </p>
-                            <p>
-                                The application allows users to read and write reviews for courses. Users are able to search
-                                and view courses reviews, add courses to the catalog,
-                                write up to one review per course, edit and delete their own reviews, and view all of their reviews
-                                on their account page (My Reviews page). All account information, reviews, and courses are stored on a
-                                SQLite database.
-                                <br/><br/>
-                                Project GitHub repository: <a href="https://github.com/Sahlar7/Salehi-CourseReviewsProject.git">Click to view more</a>
-                            </p>
+                            <Image src={require("./images/ORCL.png")} fluid style={{paddingLeft: 60}}/>
                         </Col>
                     </Row>
                 </Container>
             </div>
-            <div className="project-video">
-                <video width="800" height="500" controls>
-                    <source src={require("./images/CourseReviewDemo.mp4")}/>
-                </video>
-                <br/>
-                <span>Course Review Application Tour</span>
-            </div>
+            <br/>
             <br/>
             <Container>
                 <h2>Contributions</h2>
                 <ul>
-                    <li>Implemented the Course Review and My Review pages</li>
-                    <li>Implemented Review Editor</li>
-                    <li>Assisted in database setup, debugging, and refactoring all other pages/components</li>
+                    <li>Undergraduate Research Assistant</li>
+                    <li>Currently has worked on with 3 others on a project focusing on using
+                        computer vision and deep learning algorithms to train a model
+                        to classify pedestrian areas of interest (AOI), and through the study also analyze pedestrian gaze behavior.
+                    Specifically worked on manually classifying images by AOI, debugging image processing scripts, and using PyTorch
+                    to train the model.</li>
                 </ul>
             </Container>
             </body>
         </>
     );
 }
-export default CourseReviewsPage
+export default ORCLPage;

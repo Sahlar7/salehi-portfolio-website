@@ -68,7 +68,7 @@ function Main() {
                             <Dropdown.Item eventKey="1"><Link className="nav" to={"/HoosAvailablePage"}>Hoos Available</Link></Dropdown.Item>
                             <Dropdown.Item eventKey="2"><Link className="nav" to={"/CourseReviewsPage"}>Course Reviews Application</Link></Dropdown.Item>
                                 <Dropdown.Item eventKey="3"><Link className="nav" to={"/ResearchPage"}>Acoustic Tile Research</Link></Dropdown.Item>
-
+                                <Dropdown.Item eventKey="4"><Link className="nav" to={"/ORCLPage"}>Omni Reality & Cognition Lab</Link></Dropdown.Item>
                             </Dropdown.Menu>
                         </Dropdown>
                         <Nav.Link href="#Contact">Contact</Nav.Link>
@@ -144,6 +144,17 @@ function Main() {
                                 Method of Soundproofing</Card.Title>
                             <Card.Text>Research project for regional Regeneron ISEF Competition</Card.Text>
                             <Link to={"/ResearchPage"}>
+                                <Button className="project-button" variant="dark">View more</Button>
+                            </Link>
+                        </Card.Body>
+                    </Card>
+                        <Card className="project-card">
+                        <Card.Body>
+                            <Card.Img className="project-image" variant="top" src={require("./images/ORCL.png")} fluid></Card.Img>
+                            <Card.Title>Omni Reality & Cognition Lab</Card.Title>
+                            <Card.Text>Undergraduate Research Assistant at UVA Engineering lab dedicated to research centering around
+                            mixed reality and micromobility</Card.Text>
+                            <Link to={"/ORCLPage"}>
                                 <Button className="project-button" variant="dark">View more</Button>
                             </Link>
                         </Card.Body>
