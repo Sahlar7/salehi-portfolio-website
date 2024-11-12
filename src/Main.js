@@ -148,7 +148,10 @@ function Main() {
                             </Link>
                         </Card.Body>
                     </Card>
-                        <Card className="project-card">
+                    </CardGroup>
+                    <CardGroup>
+                    <Card className="project-card"></Card>
+                    <Card className="project-card">
                         <Card.Body>
                             <Card.Img className="project-image" variant="top" src={require("./images/ORCL.png")} fluid></Card.Img>
                             <Card.Title>Omni Reality & Cognition Lab</Card.Title>
@@ -159,6 +162,7 @@ function Main() {
                             </Link>
                         </Card.Body>
                     </Card>
+                    <Card className="project-card"></Card>
                     </CardGroup>
                 </FadeIn>
             </div>

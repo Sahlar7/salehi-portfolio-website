@@ -59,11 +59,16 @@ function ORCLPage() {
                 <h2>Contributions</h2>
                 <ul>
                     <li>Undergraduate Research Assistant</li>
-                    <li>Currently has worked on with 3 others on a project focusing on using
-                        computer vision and deep learning algorithms to train a model
-                        to classify pedestrian areas of interest (AOI), and through the study also analyze pedestrian gaze behavior.
-                    Specifically worked on manually classifying images by AOI, debugging image processing scripts, and using PyTorch
-                    to train the model.</li>
+                    <li>Worked in a team with 2 others researching a deep learning approach to 
+                        pedestrian gaze behaviour analysis in urban traffic settings</li>
+                    <li>Used PyTorch and Tensorflow to train multiple convolutional neural networks with over 90% accuracy 
+                        for pedestrian area of interest (AOI) classification</li>
+                    <li>Helped apply the model to classify pedestrian AOIs, allowing efficient analysis of pedestrian behaviors. For example, 
+                        based on the pattern of AOIs, pedestrians are more likely to look around left and right at vehicles and traffic signals while crossing the street
+                    </li>
+                    <li>Coauthor of research paper demonstrating how the trained model can be used as a tool to efficiently analyze and understand 
+                        pedestrian gaze behavior, enabling safer traffic control system design. We intend to submit the research paper to conferences and/or journals in the near future</li>
+                    <li>Additionally worked on manual image AOI labeling, and wriiting an image processing Python program</li>
                 </ul>
             </Container>
             </body>
