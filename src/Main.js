@@ -39,7 +39,7 @@ function Main() {
     const sendEmail = (e) => {
         e.preventDefault();
         if(!isSubmitted) {
-        emailjs.sendForm('service_hwoxy5b', 'template_qjefv6q', contactForm.current, 'zZW1rmL_BJKSQyQNs')
+        emailjs.sendForm(process.env.EMAILJS_SERVICE, process.env.EMAILJS_TEMPLATE, contactForm.current, process.env.EMAILJS_KEY)
             .then((result) => {
                 console.log(result.text);
             }, (error) => {
