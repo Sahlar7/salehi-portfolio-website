@@ -88,15 +88,19 @@ function Main() {
                     <Container>
                         <Row>
                             <Col>
-                                <p>My name is Noah Salehi, but I tend to go by my Iranian middle name, Sahlar, which I've been called by
-                                    friends and family since birth. I am a University of Virginia Engineering 2026' computer science student,
-                                    but before that I am an entrepreneur, a musician, and a thinker.
+                                <p>My name is Noah Salehi, but I tend to go by my middle name, Sahlar, which I've been called by
+                                    friends and family since birth. I am a University of Virginia Engineering 2026' computer science major with a minor in Psychology.
+                                     I spend much of my time as a musician: I love playing piano, guitar, and writing songs. I lead a Persian frame drum ensemble for UVA's 
+                                     Persian Culture Society. In my free time, I stay active by playing soccer, tennis, or going to they gym, and I enjoy cooking.
                                     <br/>
                                     In high school, I attended the Academies of Loudoun's engineering program, where I conducted research on inexpensive
                                     acoustic materials as an alternative to current soundproofing. This project was submitted to a regional Regeneron ISEF Competition, where it was
                                     given the ASM Materials Education Foundation award for materials science projects.
                                     <br/>
-                                    At UVA, I am a web developer in the Project Code organization working on a website called Hoos Available which aims to centralize
+                                    From May 2024 to present, I work as an research assistant at the UVA Omni Reality and Cognition Lab. My research involves using convolutional neural networks to 
+                                    classify pedestrian gaze data in urban environments. My research interests at large include deep learning, large language models, computer vision, and biotech/wearable technologies.
+                                    <br />
+                                    I was formerly a web developer in UVA's Project Code organization working on a website called Hoos Available which aims to centralize
                                     scattered course and professor information for students to easily access.
                                     <br/>
                                     As an aspiring software developer, my goal is to use technology to bring people together in positive ways: be it

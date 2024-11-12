@@ -58,7 +58,7 @@ function ORCLPage() {
             <Container>
                 <h2>Contributions</h2>
                 <ul>
-                    <li>Undergraduate Research Assistant</li>
+                    <li>Undergraduate Research Assistant (May 2024-Present)</li>
                     <li>Worked in a team with 2 others researching a deep learning approach to 
                         pedestrian gaze behaviour analysis in urban traffic settings</li>
                     <li>Used PyTorch and Tensorflow to train multiple convolutional neural networks with over 90% accuracy 
