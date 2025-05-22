@@ -15,15 +15,21 @@ function Main() {
 
     const sendEmail = (e) => {
         e.preventDefault();
-        if(!isSubmitted) {
-        emailjs.sendForm(process.env.EMAILJS_SERVICE, process.env.EMAILJS_TEMPLATE, contactForm.current, process.env.EMAILJS_KEY)
+        if (!isSubmitted) {
+            emailjs.sendForm(
+                process.env.REACT_APP_EMAILJS_SERVICE,
+                process.env.REACT_APP_EMAILJS_TEMPLATE,
+                contactForm.current,
+                process.env.REACT_APP_EMAILJS_KEY
+            )
             .then((result) => {
+                setSubmit(true);
+                setSubmitText("Sent!");
                 console.log(result.text);
             }, (error) => {
+                setSubmitText("Error! Try again");
                 console.log(error.text);
             });
-        setSubmit(true);
-        setSubmitText("Sent!")
         }
     };
 
