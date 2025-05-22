@@ -1,36 +1,13 @@
 import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
 import Image from 'react-bootstrap/Image'
-import {useEffect, useRef, useState} from "react";
-import {Button, ButtonGroup, Card, CardGroup, Col, Dropdown, Form, Row} from "react-bootstrap";
+import {useRef, useState} from "react";
+import {Button, Card, CardGroup, Col, Form, Row} from "react-bootstrap";
 import {Link} from "react-router-dom";
 import emailjs from "@emailjs/browser";
+import Navigation from "./components/Navigation";
+import FadeIn from "./components/FadeIn";
 
 function Main() {
-
-    function FadeIn(items){
-        const [isVisible, setVisible] = useState(false);
-        const domRef= useRef();
-        useEffect( ()=>{
-            const observer = new IntersectionObserver(entries =>{entries.forEach(entry=> {
-                if (entry.isIntersecting)
-                    setVisible(entry.isIntersecting);
-            });});
-            observer.observe(domRef.current);
-            return () => {
-                if(domRef.current)
-                    observer.unobserve(domRef.current);
-            }
-        }, []);
-        return (
-            <div
-                className={`fade-in-section ${isVisible ? 'is-visible' : ''}`}
-                ref={domRef}>
-                {items.children}
-            </div>
-        );
-    }
 
     const contactForm = useRef();
     const [isSubmitted, setSubmit] = useState(false);
@@ -55,26 +32,7 @@ function Main() {
 
     return (
         <>
-            <Navbar sticky="top" bg="dark" data-bs-theme="dark">
-                <Container fluid>
-                    <Navbar.Brand href="#">Sahlar Salehi</Navbar.Brand>
-                    <Navbar.Toggle aria-controls="navbarScroll" />
-                    <Nav className="me-auto">
-                        <Nav.Link href="#About">About</Nav.Link>
-                        <Dropdown as={ButtonGroup}>
-                            <Button variant="link" as={Nav.Link} href="#Projects">Projects</Button>
-                        <Dropdown.Toggle as={Nav.Link} split/>
-                            <Dropdown.Menu>
-                            <Dropdown.Item eventKey="1"><Link className="nav" to={"/HoosAvailablePage"}>Hoos Available</Link></Dropdown.Item>
-                            <Dropdown.Item eventKey="2"><Link className="nav" to={"/CourseReviewsPage"}>Course Reviews Application</Link></Dropdown.Item>
-                                <Dropdown.Item eventKey="3"><Link className="nav" to={"/ResearchPage"}>Acoustic Tile Research</Link></Dropdown.Item>
-                                <Dropdown.Item eventKey="4"><Link className="nav" to={"/ORCLPage"}>Omni Reality & Cognition Lab</Link></Dropdown.Item>
-                            </Dropdown.Menu>
-                        </Dropdown>
-                        <Nav.Link href="#Contact">Contact</Nav.Link>
-                    </Nav>
-                </Container>
-            </Navbar>
+            <Navigation/>
             <div className="header">
                 <Image className="banner" src={require("./images/piano-banner.jpg")} fluid></Image>
                     <span className = "header-text">Welcome</span>
@@ -89,23 +47,24 @@ function Main() {
                         <Row>
                             <Col>
                                 <p>My name is Noah Salehi, but I tend to go by my middle name, Sahlar, which I've been called by
-                                    friends and family since birth. I am a University of Virginia Engineering 2026' computer science major with a minor in Psychology.
+                                    friends and family since birth. I am a University of Virginia Engineering 2026' computer science major.
                                      I spend much of my time as a musician: I love playing piano, guitar, and writing songs. I lead a Persian frame drum ensemble for UVA's 
-                                     Persian Culture Society. In my free time, I stay active by playing soccer, tennis, or going to they gym, and I enjoy cooking.
+                                     Persian Culture Society. In my free time, I stay active by playing soccer, tennis, or going to they gym, and I enjoy cooking. I also love 
+                                     to make new projects, big and small. I strongly believe that the power to create software is an art, and I want to share that passion with the world 
+                                     and get rid of the stigma that coding is boring or unreachable. I want to use my skills to create software that is fun, engaging, and useful.
                                     <br/>
                                     In high school, I attended the Academies of Loudoun's engineering program, where I conducted research on inexpensive
                                     acoustic materials as an alternative to current soundproofing. This project was submitted to a regional Regeneron ISEF Competition, where it was
                                     given the ASM Materials Education Foundation award for materials science projects.
                                     <br/>
-                                    From May 2024 to present, I work as an research assistant at the UVA Omni Reality and Cognition Lab. My research involves using convolutional neural networks to 
-                                    classify pedestrian gaze data in urban environments. My research interests at large include deep learning, large language models, computer vision, and biotech/wearable technologies.
+                                    Starting in May 2024, I have worked as an research assistant at the UVA Omni Reality and Cognition Lab. My research involves using convolutional neural networks to 
+                                    classify pedestrian gaze data in urban environments, ultimately aiming to further traffic research and develop technologies to assist impaired pedestrians. 
+                                    My research interests at large include generative AI, large language models, computer vision, and wearable technologies.
                                     <br />
-                                    I was formerly a web developer in UVA's Project Code organization working on a website called Hoos Available which aims to centralize
+                                    Many of my projects have been independent. Others have been through UVA class projects or external organizations. I was formerly a web developer in UVA's Project Code organization working on a website called Hoos Available which aims to centralize
                                     scattered course and professor information for students to easily access.
                                     <br/>
-                                    As an aspiring software developer, my goal is to use technology to bring people together in positive ways: be it
-                                    two friends on other parts of the globe, a patient with an extensive medical history and their new doctor, or a
-                                    computer science student and his future colleagues.
+                                    Feel free to view some of my works below, and feel free to reach out to me and connect via linkedin (at bottom of page).
                                 </p>
                             </Col>
                             <Col>
@@ -118,6 +77,40 @@ function Main() {
             <div id="Projects" className="projects">
                 <FadeIn>
                     <h1>Projects</h1>
+                    <CardGroup>
+                    <Card className="project-card">
+                        <Card.Body>
+                            <Card.Img className="project-image" variant="top" src={require("./images/RouletteLogo.png")} fluid></Card.Img>
+                            <Card.Title>Roulette.FM</Card.Title>
+                            <Card.Text> Multiplayer music guessing game to get to know your friends and 
+                                new music through each other's Spotify playlists</Card.Text>
+                            <Link to={"/RoulettePage"}>
+                                <Button className="project-button" variant="dark">View more</Button>
+                            </Link>
+                        </Card.Body>
+                    </Card>
+                    <Card className="project-card">
+                        <Card.Body>
+                            <Card.Img className="project-image" variant="top" src={require("./images/ORCL.png")} fluid></Card.Img>
+                            <Card.Title>Omni Reality & Cognition Lab</Card.Title>
+                            <Card.Text>Undergraduate Research Assistant at UVA Engineering lab dedicated to research centering around
+                            mixed reality and micromobility</Card.Text>
+                            <Link to={"/ORCLPage"}>
+                                <Button className="project-button" variant="dark">View more</Button>
+                            </Link>
+                        </Card.Body>
+                    </Card>
+                    <Card className="project-card">
+                        <Card.Body>
+                            <Card.Img className="project-image" variant="top" src={require("./images/24kologo.png")} fluid></Card.Img>
+                            <Card.Title>24KO</Card.Title>
+                            <Card.Text>Multiplayer math game based on the classic game of 24. Compete with your friends to solve math problems and be the last player standing!</Card.Text>
+                            <Link to={"/KOPage"}>
+                                <Button className="project-button" variant="dark">View more</Button>
+                            </Link>
+                        </Card.Body>
+                    </Card>
+                    </CardGroup>
                     <CardGroup>
                     <Card className="project-card">
                         <Card.Body>
@@ -152,21 +145,6 @@ function Main() {
                             </Link>
                         </Card.Body>
                     </Card>
-                    </CardGroup>
-                    <CardGroup>
-                    <Card className="project-card"></Card>
-                    <Card className="project-card">
-                        <Card.Body>
-                            <Card.Img className="project-image" variant="top" src={require("./images/ORCL.png")} fluid></Card.Img>
-                            <Card.Title>Omni Reality & Cognition Lab</Card.Title>
-                            <Card.Text>Undergraduate Research Assistant at UVA Engineering lab dedicated to research centering around
-                            mixed reality and micromobility</Card.Text>
-                            <Link to={"/ORCLPage"}>
-                                <Button className="project-button" variant="dark">View more</Button>
-                            </Link>
-                        </Card.Body>
-                    </Card>
-                    <Card className="project-card"></Card>
                     </CardGroup>
                 </FadeIn>
             </div>

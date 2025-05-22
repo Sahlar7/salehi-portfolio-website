@@ -1,36 +1,14 @@
 import Container from "react-bootstrap/Container";
-import Navbar from "react-bootstrap/Navbar";
-import {Link} from "react-router-dom";
-import Nav from "react-bootstrap/Nav";
-import {HashLink} from "react-router-hash-link";
-import {Button, ButtonGroup, Col, Dropdown, Row} from "react-bootstrap";
-
+import {Col, Row} from "react-bootstrap";
+import Navigation from "../components/Navigation";
 
 function CourseReviewsPage(){
     return(
         <>
-            <Navbar sticky="top" bg="dark" data-bs-theme="dark">
-                <Container fluid>
-                    <Navbar.Brand ><Link className="nav" to={"/Main"}>Sahlar Salehi</Link></Navbar.Brand>
-                    <Navbar.Toggle aria-controls="navbarScroll" />
-                    <Nav className="me-auto">
-                        <Nav.Link><HashLink smooth to={"/Main#About"} className="nav">About</HashLink></Nav.Link>
-                        <Dropdown as={ButtonGroup}>
-                            <Button variant="link" as={Nav.Link}><HashLink smooth to={"/Main#Projects"} className="nav">Projects</HashLink></Button>
-                            <Dropdown.Toggle as={Nav.Link} split/>
-                            <Dropdown.Menu>
-                                <Dropdown.Item eventKey="1"><Link className="nav" to={"/HoosAvailablePage"}>Hoos Available</Link></Dropdown.Item>
-                                <Dropdown.Item eventKey="2"><Link className="nav" to={"/CourseReviewsPage"}>Course Reviews Application</Link></Dropdown.Item>
-                                <Dropdown.Item eventKey="3"><Link className="nav" to={"/ResearchPage"}>Acoustic Tile Research</Link></Dropdown.Item>
-                                <Dropdown.Item eventKey="4"><Link className="nav" to={"/ORCLPage"}>Omni Reality & Cognition Lab</Link></Dropdown.Item>
-                            </Dropdown.Menu>
-                        </Dropdown>
-                        <Nav.Link><HashLink smooth to={"/Main#Contact"} className="nav">Contact</HashLink></Nav.Link>
-                    </Nav>
-                </Container>
-            </Navbar>
+            <Navigation/>
             <body className="main">
-            <h1 style={{marginTop: 20}}>Course Reviews Application</h1>
+            <h1 className="project-header">Course Reviews Application</h1>
+            <p className="project-subtext">Fall 2023</p>
             <div>
                 <Container>
                     <Row>
@@ -55,7 +33,7 @@ function CourseReviewsPage(){
             </div>
             <div className="project-video">
                 <video width="800" height="500" controls>
-                    <source src={require("./images/CourseReviewDemo.mp4")}/>
+                    <source src={require("../images/CourseReviewDemo.mp4")}/>
                 </video>
                 <br/>
                 <span>Course Review Application Tour</span>

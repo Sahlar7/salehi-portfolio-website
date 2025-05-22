@@ -38,6 +38,14 @@ h1{
     text-align: center;
     padding-bottom: 50px;
 }
+.project-header{
+    margin-top: 20px;
+    margin-bottom: -20px;
+}
+.project-subtext{
+    text-align: center;
+    padding-bottom: 50px;
+}
 .about{
     padding-top: 50px;
     padding-bottom: 50px;

@@ -1,11 +1,12 @@
 import React from 'react';
 import {BrowserRouter as Router, Route, Routes} from "react-router-dom";
 import Main from "./Main";
-import HoosAvailablePage from "./HoosAvailablePage";
-import CourseReviewsPage from "./CourseReviewsPage";
-import ResearchPage from "./ResearchPage";
-import ORCLPage from "./ORCLPage";
-
+import HoosAvailablePage from "./pages/HoosAvailablePage";
+import CourseReviewsPage from "./pages/CourseReviewsPage";
+import ResearchPage from "./pages/ResearchPage";
+import ORCLPage from "./pages/ORCLPage";
+import RoulettePage from "./pages/RoulettePage";
+import KOPage from "./pages/KOPage";
 function App() {
     return(
     <Router>
@@ -15,6 +16,8 @@ function App() {
             <Route path="/CourseReviewsPage" element={<CourseReviewsPage/>}/>
             <Route path="/ResearchPage" element={<ResearchPage/>}/>
             <Route path="/ORCLPage" element={<ORCLPage/>}/>
+            <Route path ="/RoulettePage" element={<RoulettePage/>}/>
+            <Route path="/KOPage" element={<KOPage/>}/>
             <Route path="/Main" element={<Main/>}/>
         </Routes>
     </Router>
