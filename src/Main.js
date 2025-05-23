@@ -83,75 +83,107 @@ function Main() {
             <div id="Projects" className="projects">
                 <FadeIn>
                     <h1>Projects</h1>
-                    <CardGroup>
-                    <Card className="project-card">
-                        <Card.Body>
-                            <Card.Img className="project-image" variant="top" src={require("./images/RouletteLogo.png")} fluid></Card.Img>
-                            <Card.Title>Roulette.FM</Card.Title>
-                            <Card.Text> Multiplayer music guessing game to get to know your friends and 
-                                new music through each other's Spotify playlists</Card.Text>
-                            <Link to={"/RoulettePage"}>
+                    <FadeIn>
+                        <CardGroup>
+                            <Card className="project-card">
+                                <Card.Body>
+                                    <Card.Img className="project-image" variant="top" src={require("./images/docagent_flow.png")} fluid></Card.Img>
+                                    <Card.Title>DocAgent</Card.Title>
+                                    <Card.Text>Chat interface agent which can write directly to Google Docs, integrating research tools to help users synthesize information from multiple sources into their writing</Card.Text>
+                                    <Link to={"/DocagentPage"}>
+                                        <Button className="project-button" variant="dark">View more</Button>
+                                    </Link>
+                                </Card.Body>
+                            </Card>
+                            <Card className="project-card">
+                                <Card.Body>
+                                    <Card.Img className="project-image" variant="top" src={require("./images/ml4vaicon.png")} fluid></Card.Img>
+                                    <Card.Title>ML4VA Fruit Quality Classifier</Card.Title>
+                                    <Card.Text>1st place winner of the Fall 2024 ML4VA competition. 
+                                        Application using a machine learning model to classify fruits as fresh or spoiled</Card.Text>
+                                    <Link to={"/ML4VAPage"}>
+                                        <Button className="project-button" variant="dark">View more</Button>
+                                    </Link>
+                                </Card.Body>
+                            </Card>
+                            <Card className="project-card">
+                                <Card.Body>
+                                <Card.Img className="project-image" variant="top" src={require("./images/ORCL.png")} fluid></Card.Img>
+                                <Card.Title>Omni Reality & Cognition Lab</Card.Title>
+                                <Card.Text>Undergraduate Research Assistant at UVA Engineering lab dedicated to research centering around
+                                mixed reality and micromobility</Card.Text>
+                                <Link to={"/ORCLPage"}>
+                                    <Button className="project-button" variant="dark">View more</Button>
+                                </Link>
+                            </Card.Body>
+                            </Card>
+                        </CardGroup>
+                    </FadeIn>
+                    <FadeIn>
+                        <CardGroup>
+                        <Card className="project-card">
+                            <Card.Body>
+                                <Card.Img className="project-image" variant="top" src={require("./images/RouletteLogo.png")} fluid></Card.Img>
+                                <Card.Title>Roulette.FM</Card.Title>
+                                <Card.Text> Multiplayer music guessing game to get to know your friends and 
+                                    new music through each other's Spotify playlists</Card.Text>
+                                <Link to={"/RoulettePage"}>
+                                    <Button className="project-button" variant="dark">View more</Button>
+                                </Link>
+                            </Card.Body>
+                        </Card>
+                        <Card className="project-card">
+                            <Card.Body>
+                                <Card.Img className="project-image" variant="top" src={require("./images/24kologo.png")} fluid></Card.Img>
+                                <Card.Title>24KO</Card.Title>
+                                <Card.Text>Multiplayer math game based on the classic game of 24. Compete with your friends to solve math problems and be the last player standing!</Card.Text>
+                                <Link to={"/KOPage"}>
+                                    <Button className="project-button" variant="dark">View more</Button>
+                                </Link>
+                            </Card.Body>
+                        </Card>
+                        <Card className="project-card">
+                            <Card.Body>
+                                <Card.Img className="project-image" variant="top" src={require("./images/website-proj1.png")} fluid></Card.Img>
+                                <Card.Title>Hoos Available</Card.Title>
+                                <Card.Text>Website created by UVA students for UVA students to centralize scattered professor
+                                    and course information</Card.Text>
+                                <Link to={"/HoosAvailablePage"}>
                                 <Button className="project-button" variant="dark">View more</Button>
-                            </Link>
-                        </Card.Body>
-                    </Card>
-                    <Card className="project-card">
-                        <Card.Body>
-                            <Card.Img className="project-image" variant="top" src={require("./images/ORCL.png")} fluid></Card.Img>
-                            <Card.Title>Omni Reality & Cognition Lab</Card.Title>
-                            <Card.Text>Undergraduate Research Assistant at UVA Engineering lab dedicated to research centering around
-                            mixed reality and micromobility</Card.Text>
-                            <Link to={"/ORCLPage"}>
+                                </Link>
+                            </Card.Body>
+                        </Card>
+                        </CardGroup>
+                    </FadeIn>
+                    <FadeIn>
+                        <CardGroup>
+                        <Card className="project-card">
+                            <Card.Body>
+                                <Card.Img className="project-image" variant="top" src={require("./images/website-proj2.png")} fluid></Card.Img>
+                                <Card.Title>Course Reviews Application</Card.Title>
+                                <Card.Text>Class project for CS 3140: Software Development Essentials. Allows users to read and write
+                                reviews for any courses. </Card.Text>
+                                <Link to={"/CourseReviewsPage"}>
                                 <Button className="project-button" variant="dark">View more</Button>
-                            </Link>
-                        </Card.Body>
-                    </Card>
-                    <Card className="project-card">
-                        <Card.Body>
-                            <Card.Img className="project-image" variant="top" src={require("./images/24kologo.png")} fluid></Card.Img>
-                            <Card.Title>24KO</Card.Title>
-                            <Card.Text>Multiplayer math game based on the classic game of 24. Compete with your friends to solve math problems and be the last player standing!</Card.Text>
-                            <Link to={"/KOPage"}>
-                                <Button className="project-button" variant="dark">View more</Button>
-                            </Link>
-                        </Card.Body>
-                    </Card>
-                    </CardGroup>
-                    <CardGroup>
-                    <Card className="project-card">
-                        <Card.Body>
-                            <Card.Img className="project-image" variant="top" src={require("./images/website-proj1.png")} fluid></Card.Img>
-                            <Card.Title>Hoos Available</Card.Title>
-                            <Card.Text>Website created by UVA students for UVA students to centralize scattered professor
-                                and course information</Card.Text>
-                            <Link to={"/HoosAvailablePage"}>
-                            <Button className="project-button" variant="dark">View more</Button>
-                            </Link>
-                        </Card.Body>
-                    </Card>
-                    <Card className="project-card">
-                        <Card.Body>
-                            <Card.Img className="project-image" variant="top" src={require("./images/website-proj2.png")} fluid></Card.Img>
-                            <Card.Title>Course Reviews Application</Card.Title>
-                            <Card.Text>Class project for CS 3140: Software Development Essentials. Allows users to read and write
-                            reviews for any courses. </Card.Text>
-                            <Link to={"/CourseReviewsPage"}>
-                            <Button className="project-button" variant="dark">View more</Button>
-                            </Link>
-                        </Card.Body>
-                    </Card>
-                    <Card className="project-card">
-                        <Card.Body>
-                            <Card.Img className="project-image" variant="top" src={require("./images/website-proj3cover.png")} fluid></Card.Img>
-                            <Card.Title>Development of a 3D Printed Acoustic Tile to Determine an Inexpensive
-                                Method of Soundproofing</Card.Title>
-                            <Card.Text>Research project for regional Regeneron ISEF Competition</Card.Text>
-                            <Link to={"/ResearchPage"}>
-                                <Button className="project-button" variant="dark">View more</Button>
-                            </Link>
-                        </Card.Body>
-                    </Card>
-                    </CardGroup>
+                                </Link>
+                            </Card.Body>
+                        </Card>
+                        <Card className="project-card">
+                            <Card.Body>
+                                <Card.Img className="project-image" variant="top" src={require("./images/website-proj3cover.png")} fluid></Card.Img>
+                                <Card.Title>Development of a 3D Printed Acoustic Tile to Determine an Inexpensive
+                                    Method of Soundproofing</Card.Title>
+                                <Card.Text>Research project for regional Regeneron ISEF Competition</Card.Text>
+                                <Link to={"/ResearchPage"}>
+                                    <Button className="project-button" variant="dark">View more</Button>
+                                </Link>
+                            </Card.Body>
+                        </Card>
+                        <Card className="project-card">
+                            
+                        </Card>
+                        </CardGroup>
+                    </FadeIn>
                 </FadeIn>
             </div>
 

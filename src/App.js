@@ -7,6 +7,8 @@ import ResearchPage from "./pages/ResearchPage";
 import ORCLPage from "./pages/ORCLPage";
 import RoulettePage from "./pages/RoulettePage";
 import KOPage from "./pages/KOPage";
+import ML4VAPage from './pages/ML4VAPage';
+import DocagentPage from './pages/DocagentPage';
 function App() {
     return(
     <Router>
@@ -18,6 +20,8 @@ function App() {
             <Route path="/ORCLPage" element={<ORCLPage/>}/>
             <Route path ="/RoulettePage" element={<RoulettePage/>}/>
             <Route path="/KOPage" element={<KOPage/>}/>
+            <Route path="/ML4VAPage" element={<ML4VAPage/>}/>
+            <Route path="/DocagentPage" element={<DocagentPage/>}/>
             <Route path="/Main" element={<Main/>}/>
         </Routes>
     </Router>

@@ -19,6 +19,10 @@
 .header {
     position: relative;
 }
+.carousel_caption{
+    text-align: center;
+}
+
 .header-text{
     position: absolute;
     color: white;
