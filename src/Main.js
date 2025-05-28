@@ -41,9 +41,9 @@ function Main() {
             <Navigation/>
             <div className="header">
                 <Image className="banner" src={require("./images/piano-banner.jpg")} fluid></Image>
-                    <span className = "header-text">Welcome</span>
+                    <span className = "header-text">Hi I'm Sahlar</span>
                     <br/>
-                    <span className = "header-subtext">Enjoy your stay</span>
+                    <span className = "header-subtext">Look at my projects below</span>
             </div>
             <body className = "main">
             <FadeIn>
@@ -70,7 +70,7 @@ function Main() {
                                     Many of my projects have been independent. Others have been through UVA class projects or external organizations. I was formerly a web developer in UVA's Project Code organization working on a website called Hoos Available which aims to centralize
                                     scattered course and professor information for students to easily access.
                                     <br/>
-                                    Feel free to view some of my works below, and feel free to reach out to me and connect via linkedin (at bottom of page).
+                                    Feel free to view some of my works below and to reach out to me and connect via linkedin (at bottom of page).
                                 </p>
                             </Col>
                             <Col>
