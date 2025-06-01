@@ -9,6 +9,7 @@ import RoulettePage from "./pages/RoulettePage";
 import KOPage from "./pages/KOPage";
 import ML4VAPage from './pages/ML4VAPage';
 import DocagentPage from './pages/DocagentPage';
+import MediGuardPage from './pages/MediGuardPage';
 function App() {
     return(
     <Router>
@@ -22,6 +23,7 @@ function App() {
             <Route path="/KOPage" element={<KOPage/>}/>
             <Route path="/ML4VAPage" element={<ML4VAPage/>}/>
             <Route path="/DocagentPage" element={<DocagentPage/>}/>
+            <Route path="/MediGuardPage" element={<MediGuardPage/>}/>
             <Route path="/Main" element={<Main/>}/>
         </Routes>
     </Router>

@@ -180,7 +180,14 @@ function Main() {
                             </Card.Body>
                         </Card>
                         <Card className="project-card">
-                            
+                            <Card.Body>
+                                <Card.Img className="project-image" variant="top" src={require("./images/MediGuardLogo.png")} fluid></Card.Img>
+                                <Card.Title>MediGuard</Card.Title>
+                                <Card.Text>Class project for CS 3240: Software Engineering. Provides users accessible medical malpractice case reporting.</Card.Text>
+                                <Link to={"/MediGuardPage"}>
+                                    <Button className="project-button" variant="dark">View more</Button>
+                                </Link>
+                            </Card.Body>
                         </Card>
                         </CardGroup>
                     </FadeIn>

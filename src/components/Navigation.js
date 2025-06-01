@@ -22,6 +22,7 @@ const Navigation = () => {
                                 <Dropdown.Item eventKey="6"><Link className="nav" to={"/HoosAvailablePage"}>Hoos Available</Link></Dropdown.Item>
                                 <Dropdown.Item eventKey="7"><Link className="nav" to={"/CourseReviewsPage"}>Course Reviews Application</Link></Dropdown.Item>
                                 <Dropdown.Item eventKey="8"><Link className="nav" to={"/ResearchPage"}>Acoustic Tile Research</Link></Dropdown.Item>
+                                <Dropdown.Item eventKey="9"><Link className="nav" to={"/MediGuardPage"}>MediGuard</Link></Dropdown.Item>
                             </Dropdown.Menu>
                         </Dropdown>
                         <Nav.Link><HashLink smooth to={"/Main#Contact"} className="nav">Contact</HashLink></Nav.Link>
